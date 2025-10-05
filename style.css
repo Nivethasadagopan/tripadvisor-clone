@@ -80,6 +80,9 @@ body {
     align-items: center;
 
 }
+.navbar__s4{
+    display: none;
+}
 
 .currency-selector {
     display: flex;
@@ -705,6 +708,12 @@ footer{
     flex-direction: column;
     align-items: center;
     margin: 0;
+  }
+
+  
+
+  .navbar__s4{
+    display: block;
   }
 
   .search-bar {
