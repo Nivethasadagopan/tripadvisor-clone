@@ -256,8 +256,12 @@ body {
 
 .searchbar input:focus{
     outline: gray;
-
+    
+     outline: none;
 }
+
+
+
 
 .search-bar__button{
     position: absolute;
@@ -355,6 +359,7 @@ body {
     margin-top: 10px;
     justify-content: center;
     margin-right: 380px;
+
 }
 
 .rate-card{
@@ -367,16 +372,16 @@ body {
 
 .rate-card img{
     width: 100%;
-    height: 50%;
-    
-  background: rgba(0, 0, 0, 0.4); /* darkens image */
+    height: 60%;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4); /* darkens image */
     
 }
 
 .rate-card h3{
     position: absolute;
     color: #ffffff; 
-    top: 150px;
+    top: 190px;
     padding: 10px;
     font-weight: bolder;
     font-size: 25px;
@@ -611,5 +616,158 @@ body {
 
 }
 
+footer{
+    
+    padding: 30px;
+    background-color: rgb(241, 239, 239);
+    color: black;
+}
+.footer__one{
+    margin-left: 360px;
+    display: flex;
+    
+    
+}
+
+.footer__one__s1 p,.footer__one__s2 p{
+    color: rgb(61, 60, 60);
+    font-weight: normal;
+    font-size: 14px;
+    padding-right: 50px;
+    
+}
+
+.footer__one__s3 p{
+    color: rgb(61, 60, 60);
+    font-weight: normal;
+    font-size: 14px;
+    padding-left: 50px;
+}
 
 
+.footer__two{
+    margin-top: 10px;
+    margin-left: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__two__copy{
+    display: flex;
+    align-items: center;
+}
+
+.footer__two__copy img{
+    width: 45px;
+    padding: 2px;
+}
+
+.footer__two__copy p{
+    font-size: 12px;
+    font-weight: normal;
+    padding: 2px;
+}
+
+.footer__two__drop-down{
+    margin-right: 350px;
+    
+}
+.footer__two__currency{
+    width: 150px;
+    height: 35px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-right: 20px;
+    padding: 5px;
+     border: solid grey 2px;
+
+}
+
+.footer__two__country{
+    width: 150px;
+    height: 35px;
+    /* font-weight: bold; */
+    border-radius: 8px;
+    font-size: 16px;
+    gap: 15px;
+    padding: 5px;
+    border: solid grey 2px;
+
+}
+
+/* Media query */
+
+/* Tablet view */
+@media screen and (max-width: 800px) {
+  .navbar,
+  .footer__one,
+  .footer__two {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .search-bar {
+    width: 90%;
+    margin: 20px auto;
+    flex-direction: column;
+  }
+
+  .search-bar input,
+  .search-bar__button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .poster-image img {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .rate-card,
+  .places-card,
+  .things-todo-card,
+  .themes-card {
+    flex-basis: 45%;
+  }
+}
+
+/* Mobile view */
+@media screen and (max-width: 600px) {
+  .navbar__s1__title {
+    font-size: 20px;
+  }
+
+  .whereto__title h1,
+  .categories__title h3,
+  .places__title h3,
+  .things-todo__title h3,
+  .themes__title h1 {
+    font-size: 18px;
+  }
+
+  .rate-card,
+  .places-card,
+  .things-todo-card,
+  .themes-card {
+    flex-basis: 100%;
+  }
+
+  .poster-image__rate {
+    position: static;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer__one,
+  .footer__two {
+    flex-direction: column;
+    align-items: center;
+  }
+}
